@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+
+    tools:context="com.prescripxion.www.prescripxion2module.CartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/purchase_buttons_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            android:layout_height="wrap_content"
+            android:text="Check Out" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:textSize="17sp"
+                android:id="@+id/cartItemSelectedTextView"
+                android:text="Items Selected: 0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+
+                android:textSize="17sp"
+                android:textAlignment="textEnd"
+                android:id="@+id/cartTotalPriceTextView"
+                android:layout_marginEnd="5dp"
+                android:text="Price: 0 "/>
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:background="#ffffff"
+
+            tools:listitem="@android:layout/simple_list_item_2" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/purchase_buttons_layout"
+
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonDelivery"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="Pay On\nDelivery"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/buttonBkash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="Pay Via\nBkash"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/buttonOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:textColor="#000000"
+
+            android:layout_toEndOf="@+id/imageView"
+            android:text="Pay\nOnline"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="13sp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

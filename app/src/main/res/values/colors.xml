@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#545454</color>
+    <color name="colorAccent">#0933c9</color>
+    <color name="colorIndigo">#31D3E0</color>
+    <color name="colorDeepIndigo">#31aee0</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGrey">#566475</color>
+    <color name="colorDarkGrey">#333645</color>
+    <color name="colorStrokeGrey">#313345</color>
+    <color name="colorOrange">#fab905</color>
+    <color name="colorAsh">#818181</color>
+    <color name="colorRed">#FF4343</color>
+    <color name="colorPink">#F431CD</color>
+    <color name="colorPrimaryText">#050505</color>
+    <color name="profileCollapsibleBarBackground">#db7b80</color>
+    <color name="profileCollapsibleBarTextColor">#303030</color>
+    <color name="profileScrollBackground">#FFFFFF</color>
+    <color name="profileDataTextColor">#303030</color>
+    <color name="profileDataFieldNameTextColor">#ff4081</color>
+</resources>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">PrescripXion</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="my_medications">My Medications</string>
+    <string name="my_profile">My Profile</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="checkout">Checkout</string>
+    <string name="camera">Camera</string>
+
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="new_user">New user?</string>
+    <string name="next">Next</string>
+    <string name="not_the_first_time_here">Not the first time here?</string>
+    <string name="finish">Finish</string>
+    <string name="new_naccount">New\nAccount</string>
+    <string name="_1">1</string>
+    <string name="_2">/2</string>
+    <string name="steps">steps</string>
+    <string name="log_in">Log in</string>
+    <string name="upload_a_profile_picture_optional">Upload a profile picture\n(optional)</string>
+    <string name="name">NAME</string>
+    <string name="phone">MOBILE NO</string>
+    <string name="user_name">User Name</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="gender">GENDER</string>
+    <string name="blood_group">BLOOD GROUP</string>
+    <string name="address">ADDRESS</string>
+    <string name="age">AGE</string>
+    <string name="__2">2</string>
+    <string name="prescripxion_logo">Prescripxion logo</string>
+    <string name="user_name_n_n_nphone_n_n_ngender_n_n_nblood_group_n_n_nage_n_n_naddress">User Name\n\n\nPhone\n\n\nGender\n\n\nBlood Group\n\n\nAge\n\n\nAddress</string>
+
+</resources>

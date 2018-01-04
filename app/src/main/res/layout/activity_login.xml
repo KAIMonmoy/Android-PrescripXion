@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#31D3E0"
+    tools:context="com.prescripxion.www.prescripxion2module.MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText_login_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="285dp"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/login_edittext_background"
+        android:drawableStart="@drawable/ic_action_email"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:hint="@string/user_name"
+        android:textColorHint="#70FFFFFF"
+        android:textColor="@color/colorWhite" />
+
+    <EditText
+        android:id="@+id/editText_login_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editText_login_name"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/login_edittext_background"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_action_password"
+        android:ems="10"
+        android:hint="@string/mobile_no"
+        android:inputType="phone"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="#70FFFFFF" />
+
+    <Button
+        android:id="@+id/button_signin"
+        android:background="@drawable/login_signin_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_below="@+id/editText_login_mobile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorIndigo"
+        android:text="@string/log_in" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_signin"
+        android:layout_below="@+id/button_signin"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp"
+        android:text="@string/new_user" />
+
+    <TextView
+        android:id="@+id/textView_login_signup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_signin"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="@color/colorWhite"
+        android:layout_toEndOf="@+id/textView"
+        android:text="@string/sign_up" />
+
+    <Button
+        android:id="@+id/button_login_emergency"
+        android:background="@drawable/emergency_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp" />
+
+    <ImageView
+        android:id="@+id/login_logo_view"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/button_login_emergency"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:contentDescription="@string/prescripxion_logo"
+        app:srcCompat="@drawable/pxlogohoriz" />
+
+</RelativeLayout>

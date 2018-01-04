@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+
+    <!-- Settings, should always be in the overflow -->
+
+    <item
+        android:id="@+id/button_checkout"
+        android:icon="@drawable/ic_shopping_cart"
+        android:title="@string/checkout"
+
+
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/button_camera"
+        android:icon="@drawable/ic_camera"
+        android:title="@string/camera"
+
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

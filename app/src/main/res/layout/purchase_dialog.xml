@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dialog_amount_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Enter amount"
+        android:textAlignment="center"
+
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_amount_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_amount_textView"
+
+    android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:id="@+id/dialog_add"/>
+
+        <EditText
+            android:id="@+id/dialog_amount_editText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"/>
+
+
+        <Button
+            android:id="@+id/dialog_subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-1" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_amount_layout"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Button
+            android:id="@+id/dialog_confirm_buttom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="PURCHASE"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="77dp" />
+
+        <Button
+            android:id="@+id/dialog_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Cancel"
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
