@@ -130,6 +130,7 @@ public class ProfileActivity extends AppCompatActivity implements AppBarLayout.O
         cToolbar.setTitle(getString(R.string.user_name));*/
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.getMenu().getItem(R.id.navigation_profile).setChecked(true);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
@@ -218,5 +219,6 @@ public class ProfileActivity extends AppCompatActivity implements AppBarLayout.O
             return false;
         }
     };
+
 }
 

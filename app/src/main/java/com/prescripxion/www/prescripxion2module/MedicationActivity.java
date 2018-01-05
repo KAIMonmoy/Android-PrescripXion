@@ -75,6 +75,7 @@ public class MedicationActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.getMenu().getItem(R.id.navigation_medication).setChecked(true);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
     }
