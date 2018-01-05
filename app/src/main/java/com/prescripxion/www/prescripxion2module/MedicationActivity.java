@@ -28,7 +28,6 @@ public class MedicationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_view);
 
-
         ArrayList<String> medicine = new ArrayList<String>();
         medicine.add("Ace\n500 mg Paracetamol");
         medicine.add("Ace Plus\n500 mg Paracetamol");
@@ -74,11 +73,11 @@ public class MedicationActivity extends AppCompatActivity {
         mAdapter = new MedicationAdapter(medicineList);
         mRecyclerView.setAdapter(mAdapter);
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.getMenu().getItem(R.id.navigation_medication).setChecked(true);
+        final BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
     }
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
