@@ -164,6 +164,7 @@ public class Signup_form_one extends AppCompatActivity {
                 editor.putBoolean("userImageExists", true);
                 editor.putString("userImagePath", imagePath);
                 editor.apply();
+                Toast.makeText(getApplicationContext(), "Image Upload Successful", Toast.LENGTH_SHORT).show();
             }
         }
     }

@@ -84,7 +84,7 @@ public class ProfileActivity extends AppCompatActivity implements AppBarLayout.O
         setSupportActionBar(toolbar);
         startAlphaAnimation(textviewTitle, 0, View.INVISIBLE);
 
-        avatar.setImageURI(imageUri);
+//        avatar.setImageURI(imageUri);
         //coverImage.setImageResource(R.drawable.profile_pic);
 
         /*SharedPreferences sharedPreferences1 = getSharedPreferences("signUpInfo", Context.MODE_PRIVATE);
@@ -105,11 +105,6 @@ public class ProfileActivity extends AppCompatActivity implements AppBarLayout.O
         info[3]=sharedPreferences.getString("userBloodGroup","");
         info[4]=sharedPreferences.getString("userGender","");
         info[5]=sharedPreferences.getString("userAge","")+" Years";
-
-        if(sharedPreferences.getBoolean("userImageExists", false)){
-            imageUri = Uri.parse(sharedPreferences.getString("userImagePath",""));
-            avatar.setImageURI(imageUri);
-        }
 
 
         TextView textView1 = (TextView) findViewById(R.id.textview1);
