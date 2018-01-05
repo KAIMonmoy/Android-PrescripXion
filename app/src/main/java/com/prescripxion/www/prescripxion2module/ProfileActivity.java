@@ -24,6 +24,8 @@ import android.widget.TextView;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.view.SimpleDraweeView;
 
+import java.io.File;
+
 
 public class ProfileActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener{
     private static final float PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR  = 0.9f;
@@ -106,6 +108,11 @@ public class ProfileActivity extends AppCompatActivity implements AppBarLayout.O
         info[4]=sharedPreferences.getString("userGender","");
         info[5]=sharedPreferences.getString("userAge","")+" Years";
 
+        if(sharedPreferences.getBoolean("userImageExists",false)){
+            File image = new File(sharedPreferences.getString("userImagePath", null));
+            imageUri = Uri.fromFile(image);
+            avatar.setImageURI(imageUri);
+        }
 
         TextView textView1 = (TextView) findViewById(R.id.textview1);
         textView1.setText(info[0]);

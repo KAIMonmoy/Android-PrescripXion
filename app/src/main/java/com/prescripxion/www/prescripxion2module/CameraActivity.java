@@ -11,6 +11,8 @@ import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import java.io.File;
@@ -56,8 +58,8 @@ public class CameraActivity extends AppCompatActivity {
 
         imageView = findViewById(R.id.imageView);
 
-            if( ContextCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA)
-                    != PackageManager.PERMISSION_GRANTED) {
+            //if( ContextCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA)
+                   // != PackageManager.PERMISSION_GRANTED) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     requestPermissions(new String[]{android.Manifest.permission.CAMERA}, MY_CAMERA_PERMISSION);
                 }
@@ -75,7 +77,32 @@ public class CameraActivity extends AppCompatActivity {
                     cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, pictureUri);
                     startActivityForResult(cameraIntent, CAMERA_REQUEST);
                 }
-            }
+            //}
+
+            Button openCameraButton = (Button) findViewById(R.id.camera);
+
+            openCameraButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        requestPermissions(new String[]{android.Manifest.permission.CAMERA}, MY_CAMERA_PERMISSION);
+                    }
+                    else{
+                        Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
+                        String pictureName = getPictureName();
+
+                        File path = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getAbsolutePath() + "/PrescripXion");
+                        if (!path.exists()) {
+                            path.mkdirs();
+                        }
+                        File image = new File(path, pictureName);
+                        Uri pictureUri = Uri.fromFile(image);
+                        cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, pictureUri);
+                        startActivityForResult(cameraIntent, CAMERA_REQUEST);
+                    }
+                }
+            });
 
     }
 
